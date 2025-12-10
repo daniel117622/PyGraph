@@ -10,13 +10,18 @@ your code editor.
 From the project root directory:
 
 ```bash
-npm install
-npm run compile
-npx @vscode/vsce package
+  npm install
+  npm run compile
+  npx @vscode/vsce package
 ```
 
 This generates a `.vsix` file, for example:
 
+Run the following command to install locally:
+
+```bash
+  code --install-extension python-calltree-viewer-0.1.0.vsix`
+```
 
 ## Features
 
@@ -56,6 +61,7 @@ If you have a specific Python binary configured:
 
 "python.defaultInterpreterPath": "/usr/bin/python3"
 ```
+
 
 
 
