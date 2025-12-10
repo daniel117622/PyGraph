@@ -41,4 +41,10 @@ The extension will attempt to use the Python interpreter defined by your VSCode 
 If you have a specific Python binary configured:
 
 ```json
+
 "python.defaultInterpreterPath": "/usr/bin/python3"
+```
+You can also right click the function to see the call tree directly: 
+
+<img width="1905" height="1081" alt="image" src="https://github.com/user-attachments/assets/3ac937aa-db7f-48b1-9d07-1c4a2e4de65f" />
+
