@@ -40,11 +40,7 @@ Run the following command to install locally:
 
 ## Commands
 
-| Command ID | Description |
-|-------------|-------------|
-| `pythonCalltree.showCallTree` | Show the call tree for the selected Python function. |
-
-You can also trigger this command using the shortcut:
+Use the shortcut:
 ```Ctrl + Shift + R```
 
 You can also right click the function to see the call tree directly: 
@@ -61,6 +57,7 @@ If you have a specific Python binary configured:
 
 "python.defaultInterpreterPath": "/usr/bin/python3"
 ```
+
 
 
 
