@@ -1,12 +1,18 @@
 {
   "name": "python-calltree-viewer",
   "displayName": "Python Calltree Viewer",
-  "description": "Show static call trees for Python functions",
+  "description": "Generate and view static Python call trees for selected functions or methods directly inside Visual Studio Code.",
+  "publisher": "daniel117622",
   "version": "0.1.0",
-  "publisher": "yours",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel117622/PyGraph.git"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.60.0"
   },
+  "categories": ["Other"],
   "activationEvents": [
     "onCommand:pythonCalltree.showCallTree"
   ],

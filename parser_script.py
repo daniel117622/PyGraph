@@ -93,6 +93,10 @@ def build_tree(func, calls, seen=None):
         else:
             node["children"].append({"name": callee_short, "children": []})
             
+    # Para cada nivel del arbol se ordena de mayor a menor.
+    # Se utiliza el numero de hijos.
+    node["children"].sort(key=lambda x: len(x["children"]), reverse=True)
+
     return node
 
 def max_depth(func, calls, seen=None, all_funcs=None):
@@ -150,7 +154,7 @@ if __name__ == "__main__":
         # 2. Build Tree using resolved entry
         result = build_tree(resolved_entry, visitor.calls)
         result["max_depth"] = max_depth(resolved_entry, visitor.calls)
-        print(json.dumps(result))
+        print(json.dumps(result, indent=2))
 
     except Exception as e:
         print(json.dumps({"error": str(e)}))
